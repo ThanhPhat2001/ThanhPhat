@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .container span {
+            text-transform: uppercase;
+            color: rgba(128, 128, 128, 0.87);
+        }
+        .container table tr td {
+            border: 1px solid black;
+            padding: 15px;
+        }
+
+        .container .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container .header h2{
+            color: rgba(13, 7, 82, 0.822);
+        }
+
+        .container .header .contract {
+            display: flex;
+            align-items: center;
+        }
+            
+
+        .container .header .contract p:first-child {
+            border: 1px solid black;
+            background-color: rgba(13, 7, 82, 0.918);
+            color: white;
+            padding: 10px;
+        }
+
+            .container .header .contract p:last-child {
+            border: 1px solid black; 
+            background-color: rgba(184, 176, 176, 0.226);
+            padding: 10px;
+        }
+
+        .container table tr:first-child {
+            background-color: rgb(13, 6, 87);
+            color: rgba(182, 182, 14, 0.829);
+            font-weight: 900;
+        }
+
+        .container table tr:first-child td:first-child {
+            background-color: white;
+        }
+
+        .container table tr:first-child td:nth-child(5){
+            display: flex;
+            
+        }
+
+        .container table tr:first-child td:nth-child(5) .popular {
+            font-size: 10px;
+            color: rgba(255, 0, 0, 0.76);
+            margin-left: 10px;
+        }
+
+        .container table tr:first-child td:nth-child(5) .unify {
+            color: rgba(182, 182, 14, 0.829);
+        }
+
+        .container table tr:last-child .item {
+           text-transform: uppercase;
+           font-weight: 900;
+           color: rgba(182, 182, 14, 0.829);
+           
+        }
+
+        .container table tr td:first-child {
+            font-weight: 900;
+        }
+
+        .container table tr:last-child .item p {
+            border: 1px solid  rgba(16, 7, 117, 0.925) ;
+            border-radius: 5px;
+            background-color: rgba(16, 7, 117, 0.925);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container table tr td:nth-child(5) {
+            padding: 2px;
+        }
+        .container table tr:last-child td {
+            padding: 5px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span>Curently available</span>
+        <div class="header">
+            <h2>Pricing table</h2>
+            <div class="contract">
+                <p>Individual</p>
+                <p>Enterprise</p>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <td></td>
+                <td>Basic</td>
+                <td>Starter</td>
+                <td>Business</td>
+                <td>
+                    <p class="unify">Unify</p>
+                    <p class="popular">* Popular</p>
+                </td>
+                <td>Extreme</td>
+            </tr>
+            <tr>
+                <td>Domains</td>
+                <td>1</td>
+                <td>2</td>
+                <td>5</td>
+                <td>9</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>WorldPress</td>
+                <td>No</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Page Builder</td>
+                <td>No</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Page</td>
+                <td>200</td>
+                <td>225</td>
+                <td>275</td>
+                <td>300</td>
+                <td>400+</td>
+            </tr>
+            <tr>
+                <td>Elements</td>
+                <td>200</td>
+                <td>350</td>
+                <td>500</td>
+                <td>900</td>
+                <td>1600+</td>
+            </tr>
+            <tr>
+                <td>Support</td>
+                <td>1 month</td>
+                <td>4 month</td>
+                <td>8 month</td>
+                <td>1 Year</td>
+                <td>Unlimited</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>$19.00</td>
+                <td>$29.00</td>
+                <td>$39.00</td>
+                <td>$49.00</td>
+                <td>$99.00</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="item"><p>purchase  ></p></td>
+                <td class="item"><p>purchase  ></p></td>
+                <td class="item"><p>purchase  ></p></td>
+                <td class="item"><p>purchase  ></p></td>
+                <td class="item"><p>purchase  ></p></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container{
+            border: 1px solid black;
+            display: flex;
+            padding: 15px;
+            
+        }
+
+        .container .child{
+            width: calc(100% / 3);
+            display: flex;
+            justify-content: center;
+            border-right: 1px solid #ddd;
+        }
+
+        .container .child:last-child {
+            border-right: none;
+        }
+
+        .container .child .icon{
+            font-size: 32px;
+            margin-right: 15px;
+        }
+
+        .container .content p{
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child">
+            <div class="icon">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="content">
+                <strong>Free shipping & return</strong>
+                <p>Free shipping on all orders over $99</p>
+            </div>
+        </div>
+        <div class="child">
+            <div class="icon">
+                <i class="fa-solid fa-dollar-sign"></i>   
+            </div>
+            <div class="content">
+                <strong>Money back guarantee</strong>
+                <p>100% money back guarantee</p>
+            </div>
+        </div>
+        <div class="child">
+            <div class="icon">
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </div>
+            <div class="content">
+                <strong>online support 24/7</strong>
+                <p>orem ipsum dolor sit amet</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
