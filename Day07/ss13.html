@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. Toán tử số học
+        let x = 5 //number
+        let y = 2
+        let z = '5' //string
+
+        // phép nhân bằng dấu *
+        console.log(x * y);
+        // phép chia bằng dấu /
+        console.log(x / y);
+        // phép chia lấy phần dư bằng dấy %
+        console.log(x % y);
+
+        //let a = prompt('Nhập vào biến a')
+        //let b = prompt('Nhập vào biến b')
+
+        console.log(typeof x, typeof y);
+
+        //console.log('<<=== 🚀 x + y ===>>',x + y);
+        //console.log('<<=== 🚀 x + y ===>>',parseInt(x) + parseInt(y)); cho thành number
+
+        //2. Toán tử so sánh
+        //console.log('x == z', x == z); so sánh về giá trị
+        //console.log('x === z', x === z); so sánh về giá trị và kiểu dữ liệu
+
+        //3. Toán tử logic => Boolean True/False
+        /* SO SÁNH AND ==> ALL ĐỀU TRUE
+            TRUE AND TRUE = TRUE
+            TRUE AND FALSE = FALSE
+            FALSE AND FALSE = FALSE
+            FALSE AND TRUE = FALSE */
+
+        // AND (&&)
+        console.log('AND',x === 5 && y === 2);
+
+        /* OR (||) chỉ cần 1 vế đúng
+            TRUE AND TRUE = TRUE
+            TRUE AND FALSE = TRUE
+            FALSE AND FALSE = FALSE
+            FALSE AND TRUE = TRUE */
+
+        console.log('OR',x === 6 || y === 2);
+
+        //Not (!) ==> Phủ đỉnh (ngược lại)
+
+        console.log('NOT',!(x === 6 || y === 4));
+
+        //4. Toán tử gán
+        let total = 0; // gán giá trị 0 cho biến total
+
+        total +=3; //chính nó +3
+        //total = total + 3
+
+        total -=1 //chính nó -1
+        //total = total - 1
+
+        console.log('<<=== 🚀 total ===>>',total);
+
+        //5. Toán tử đặt biêt
+
+        //typeof kiểm tra kiểu dữ liệu
+
+
+        //6. Regular expressioms
+        // Ex: 0988777666 0-9, bắt đầu  = 0, đủ 10 kí tự
+        let pattern = /^0([0-9]+){9}$/;
+        let text = '09059876112';
+        let result = pattern.test(text)
+        console.log(result);
+
+        // Ex2: slug= tin-tuc/xiaomi-bat-dau-thu-nghiem-miui-15-1536756
+        // a-z, 0-9, và dấu -,
+        let patternSlug = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+        let slug = 'tin-tuc-nhung-chiec-dien-thoai-oppo-gia-re-nhat-gia-tot-153';
+        
+        let resultSlug = pattern.test(slug);
+        console.log('<<=== 🚀 resultSlug ===>>',resultSlug);
+
+
+
+
+        
+    </script>
+</body>
+</html>

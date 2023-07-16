@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //đặc tính của local storage
+        //chỉ mất khi xóa đi hoặc cài lại win
+
+
+        // kiểm tra xem trình duyệt có hỗ trợ vào web storage không
+         if(typeof (Storage) != "underfinded") {
+            document.write('có hỗ trợ web storage')
+        } else {
+            document.write('không hỗ trợ web storage')
+        }
+
+        //1. lưu 1 key xuống local storage
+        localStorage.setItem('name','Sarah')
+        localStorage.setItem('age','32')
+
+        //2. lấy 1 key từ local storage lên
+        let name = localStorage.getItem('name')
+        console.log(name);
+
+        //3. xóa 1 key
+        localStorage.removeItem('name')
+
+        //4. xóa tất cả
+        localStorage.clear()
+    </script>
+</body>
+</html>

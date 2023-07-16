@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input  placeholder="username" type="text" name="username" value="" />
+    <input  placeholder="password" type="text" name="password" value="" />
+
+    <script>
+        let userName = document.querySelector('input[name="username"]')
+        userName.value = 'maithanhphat'   
+        
+        let passWord = document.querySelector('input[name="password"]')
+        passWord.value = '123123'   
+
+        userName.id = 'name'
+        passWord.id = 'pass'
+        console.log(userName,passWord);
+
+        let userNameNew = document.querySelector('#name')
+        console.log(userNameNew);
+
+        let passWordNew = document.querySelector('#pass')
+        console.log(passWordNew);
+    </script>
+</body>
+</html>

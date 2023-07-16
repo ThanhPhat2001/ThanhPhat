@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. cú pháp khai báo mảng
+        let myArr = ['banana', 'orange', 'tomato']; //mảng 1 chiều
+        let myArrComplex = ['banana', true, 17];
+        let emmtyArr =[]; //chưa có phần tử nào = mảng trống
+
+        //2. Truy cập đến phần tử của mảng
+        //vị trí thứ tự (index) trong mảng bắt đầu = số 0    
+        console.log(myArr[1]); //orange  cú pháp tên mảng [index]
+
+        //3. Làm sao biết mảng có bao nhiêu phần tử
+        console.log(myArr.length);  // => 3
+
+        //4. Thêm mới 1 phần tử vào mảng
+        // cách 1: thêm vào mảng chưa tồn tại
+        emmtyArr[0] = 'Toyota';
+        emmtyArr[1] = 'Honda';
+        console.log('<<=== 🚀emmtyArr  ===>>', emmtyArr);
+
+            //Thêm vào mảng đã tồn tại
+        myArr[3] = 'Lemon';
+        myArr[myArr.length+1] = 'apple'
+
+        //cách 2
+        myArr.push('Watermelon'); //thêm vào cuối mảng 1 phần tử mới
+        console.log('<<=== 🚀myArr  ===>>',myArr);
+
+        //4. các phương thức thao tác với mảng
+
+        //4.1. concat(gộp mảng)
+        let newArr = myArr.concat(myArrComplex);
+        console.log('<<=== 🚀 newArr ===>>',newArr);
+
+        //4.2. join ==> nối các phân tử của chuỗi thành 1 mảng thành 1 chuỗi ngăn cách dấu truyền vào join
+        console.log(myArrComplex.join(','));  //  =>banana,true,17(string)
+
+        //4.3 pop () ==> xóa phần tử cuối cùng của mảng
+        myArrComplex.pop();
+        console.log('<<=== 🚀 myArrComplex ===>>',myArrComplex);
+
+        //https://www.w3schools.com/js/js_arrays.asp
+        //xem thêm 
+        //slice, splice ==> chú ý
+
+
+
+
+    </script>
+</body>
+</html>

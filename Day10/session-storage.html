@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //đặc tính của session storage là tồn tại theo phiên
+        //tắt tab, hoặc đóng trình duyệt là tắt
+        
+        // kiểm tra xem trình duyệt có hỗ trợ vào web storage không
+        if(typeof (Storage) != "underfinded") {
+            document.write('có hỗ trợ web storage')
+        } else {
+            document.write('không hỗ trợ web storage')
+        }
+
+        //1. Lưu cái key xuống session storage
+        sessionStorage.setItem('name','Sarah')
+        sessionStorage.setItem('age','32')
+        //value: chỉ chấp nhận string, boolean, interger, float
+
+        //2. Lấy 1 key từ dưới session storage lên
+        let name = sessionStorage('name')
+        console.log(name);
+
+        //3. xóa 1 key 
+        
+    </script>
+</body>
+</html>

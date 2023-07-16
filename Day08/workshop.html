@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <input id="a" type="text" name="a">
+    <input id="b" type="text" name="b">
+    <select name="pheptinh" id="pheptinh">
+        <option value="add">Cộng</option>
+        <option value="subtract">Trừ</option>
+        <option value="multiply">Nhân</option>
+        <option value="divide">Chia</option>
+    </select>
+    <button onclick="cal()">Tính Kết quả</button>
+    <div id="result"></div>
+    
+
+
+
+    <script>
+        /* Task 1
+        function add(a,b){
+            let add = a + b;
+            return add;
+        };
+        function subtract (a,b){
+            let subtract  = a - b;
+            return subtract ;
+        };
+        function multiply (a,b){
+            let multiply  = a * b;
+            return multiply ;
+        };
+        function divide (a,b){
+            let divide  = a / b;
+            return divide ;
+        };
+        console.log(multiply(4,5));
+        */
+
+        
+          function cal(){
+            console.log('Tính');
+            let a = document.querySelector("input#a").value; //str
+            let b = document.querySelector("input#b").value; //str
+            let pheptinh = document.querySelector("#pheptinh").value;
+
+            console.log(a,b,pheptinh);
+
+            a = parseInt(a);
+            b = parseInt(b);
+
+            let result = 0;
+            if(pheptinh === 'add'){
+                result = a + b
+            }
+            else if(pheptinh === 'subtract'){
+                result = a - b;
+            }
+            else if(pheptinh === 'multiply'){
+                result = a * b;
+
+            }else if(pheptinh === 'divide'){
+                result = a / b;
+            }
+
+            console.log(result);
+            
+            document.querySelector("#result").innerText = result;
+        }
+    
+       
+        
+       
+
+      
+   
+
+
+      
+        
+
+
+        
+            
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

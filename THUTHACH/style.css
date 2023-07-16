@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 100%;
+    height: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header .top-header .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.header .top-header .container .left-header {
+    margin-left: 25px;
+}
+
+.header .top-header .container .right-header {
+    margin-right: 25px;
+}
+
+.header .top-header .container .right-header .list-none{
+    display: flex;
+}
+
+.header .top-header .container .right-header .list-none li {
+    margin: 0 10px;
+}
+
+.header .top-header .container .right-header .list-none li a{
+    text-decoration: none;
+    color: #333333;
+}
+
+.header .top-header .container .right-header .list-none li{
+    list-style-type: none;
+}
+
+.header .top-header .container .right-header .list-none .my-account .my-acconut-list {
+    position: absolute;
+    display: none;
+}
+
+.header .top-header .container .right-header .list-none .my-account a:hover {
+    color: rgba(0, 255, 255, 0.5);
+}
+
+.header .top-header .container .right-header .list-none .my-account:hover .my-acconut-list{
+    background-color: white;
+    color: #333333;
+    display: block !important;
+    border: 1px solid gray;
+}
+
+.header .top-header .container .right-header .list-none .my-account .my-acconut-list ul li {
+    margin: 10px ;
+    padding: 4px;
+}
+
+.header .top-header .container .right-header .list-none .my-account .my-acconut-list .dashes {
+    border-bottom: 1px solid #817c7cb6;
+    outline: none;
+    width: 100%;
+    display: block;
+    min-height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header .top-header .container .right-header .list-none .usd .usd-list {
+    position: absolute;
+    display: none;
+} 
+
+.header .top-header .container .right-header .list-none .usd:hover .usd-list{
+    background-color: white;
+    color: #333333;
+    display: block !important;
+    border: 1px solid gray;
+}
+
+.header .top-header .container .right-header .list-none .usd:hover .usd-list ul li {
+    margin: 10px ;
+    padding: 4px;
+    width: 160px;
+}
+
+.header .top-header .container .right-header .list-none .usd a:hover {
+    color: rgba(0, 255, 255, 0.5);
+}
+
+.bottom-header .container {
+    display: flex;
+    border-top: 1px solid rgba(128, 128, 128, 0.658);
+    margin-top: 20px;
+}
+
+.bottom-header .container .logo {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.bottom-header .container .logo a img{
+    width: 120px;
+    height: 29.44px;
+}
+
+.bottom-header .container .navigation {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.bottom-header .container .navigation .main-navigation{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.bottom-header .container .navigation .main-navigation a {
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+}
+
+.bottom-header .container .navigation .main-navigation .man {
+    position: relative;
+    max-width: 100%;
+}
+
+.bottom-header .navigation .main-navigation .man .row {
+    position: absolute;
+    display: none;
+}
+
+.bottom-header .navigation .main-navigation .man .row ul{
+    list-style-type: none;
+    width: 300px;    
+    background: white;
+    border-top: 1px solid gray;
+}
+
+.bottom-header .navigation .main-navigation .man:hover> .row {
+    display: block;
+    background-color: white;
+    display: flex;
+}
+
+.bottom-header .navigation .main-navigation .man .row ul h6 {
+    font-size: 15px;
+    margin-left: 22px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.bottom-header .navigation .main-navigation .man .row ul {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.bottom-header .navigation .main-navigation .man .row ul li{
+    padding: 2px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.bottom-header .navigation .main-navigation .man .row ul .new a span{
+    background-color: rgb(7, 189, 189);
+    color: white;
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.bottom-header .navigation .main-navigation .man .row ul .sale a span{
+    background-color: rgba(255, 0, 0, 0.808);
+    color: white;
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.bottom-header .container .navigation .main-navigation .women {
+    position: relative;
+    max-width: 100%;
+}
+
+.bottom-header .navigation .main-navigation .women .row {
+    position: absolute;
+    display: none;
+    
+}
+
+.bottom-header .navigation .main-navigation .women .row ul{
+    list-style-type: none;
+    width: 300px;    
+    background: white;
+    border-top: 1px solid gray;
+}
+
+.bottom-header .navigation .main-navigation .women:hover> .row {
+    display: block;
+    background-color: white;
+    display: flex;
+}
+
+.bottom-header .navigation .main-navigation .women .row ul h6 {
+    font-size: 15px;
+    margin-left: 22px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.bottom-header .navigation .main-navigation .women .row ul {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.bottom-header .navigation .main-navigation .women .row ul li{
+    padding: 2px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 100;
+}

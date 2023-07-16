@@ -1,0 +1,28 @@
+.navigation .main-navigation{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+.navigation .main-navigation li {
+    padding: 30px;
+}
+.navigation .main-navigation .man {
+    position: relative;
+}
+
+
+
+
+.navigation .main-navigation .man .container{
+    display: flex;
+    position: absolute;
+    display: none;
+}
+
+.navigation .main-navigation .man:hover> .container {
+    background-color: aqua;
+    display: block;
+    display: flex !important;
+}

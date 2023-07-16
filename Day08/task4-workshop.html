@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        /* Task 3
+       let student = function(name, age, gender, date, height, weight, nationality){
+        this.name = name
+        this.age = age
+        this.gender = gender
+        this.date = date
+        this.height = height
+        this.weight = weight
+        this.nationality = nationality
+       }
+
+       let studentA = new student('A', 22, 'Nam', '02/11', '1m70', 70, 'VietNam')
+       let studentB = new student('B', 25, 'Nam', '05/12', '1m50', 80, 'VietNam',)
+        
+        console.log('<<=== studentB  ===>>',studentB);
+       */
+
+       let information = function(id, name, email, gender){
+        this.id = id
+        this.name = name
+        this.email = email
+        this.gender = gender
+       }
+
+       let user = new information(1, 'Nguyenvana', '123123@gmail.com', 'Nam')
+       console.log(user);
+       user.name = 'Nguyen Van B'
+       console.log('<<=== 🚀user  ===>>',user);
+       let newUser = new information(1, 'NguyenvanB', 'NuyenvanB@gmail.com', 'Nữ')
+       newUser = {...newUser, adim: '090909'}
+       console.log(newUser);
+       let newUserA = {...user, ...newUser}
+       console.log('<<=== 🚀newUserA  ===>>',newUserA);
+      
+       
+
+       
+      
+    </script>
+</body>
+</html>

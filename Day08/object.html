@@ -1,0 +1,59 @@
+<script>
+//Đối tượng (Object) == Lab
+
+//1. Cách 1 = OOP Object
+//mang tính hướng đối tượng
+
+let objectStudent = function(name, age, email, mobie, gender){
+    this.name = name;
+    this.age = age;
+    this.email = email;
+    this.mobbie = mobie;
+    this.gender = gender;
+}
+
+let studenTri = new objectStudent('Trí', 22, 'Tri123@gmail.com', '19001900', 'Male')
+let studenTrong = new objectStudent('Trí', 22, 'Tri123@gmail.com', '19001900', 'Male', 'Đà Nẵng')
+
+console.log('<<=== 🚀 studenTrong ===>>',studenTrong);
+//Kết luận: tất cả các đối tượng đều tuân theo một quy chuẩn thông tin đã định nghĩa
+
+//Cách 2
+//Khai báo tự do hơn không tuân theo quy tắt
+
+let studenTriV2 ={name: 'Trí', age: '21', email: 'tri123@gmail.com'}
+let studenTrongV2 ={name: 'Trọng', age: '21'}
+
+console.log(studenTrongV2);
+
+//Truy cập đến phần tử trong object
+console.log(studenTriV2.name);
+console.log(studenTriV2['age']);
+let textEmail = 'email';
+console.log(studenTriV2['email']);
+
+//Thêm 1 phần tử vào object
+studenTrongV2.email = 'trong123@gmail.com'
+//ES6
+//...studenTrongV2: thừa kế lại all thuộc tính trước đó
+studenTrongV2 = {...studenTrongV2, gender: 'male'} // nếu chưa có gender thì ghi mới
+console.log(studenTrongV2);
+
+
+//Thay đổi giá trị của 1 phần tử
+studenTrongV2.age = 28;
+//ES6
+studenTrongV2 = {...studenTrongV2, age: 28} //nếu có age rồi thì ghi đè giá trị
+console.log(studenTrongV2);
+
+//String objcet:https://www.w3schools.com/jsref/jsref_obj_string.asp
+//1 số phương thức xử lý với chuỗi
+//trim, include, replace, upper, lower
+
+//Math object: https://www.w3schools.com/js/js_math.asp
+//round, ceil, floor
+
+//Date objcet: https://www.w3schools.com/js/js_dates.asp
+
+
+</script>
